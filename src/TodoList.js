@@ -5,7 +5,7 @@ import Divider from "@material-ui/core/Divider";
 import List from "@material-ui/core/List";
 import { TodosContext } from "./contexts/todos.context";
 function TodoList(props) {
-  const { todos } = useContext(TodosContext);
+  const todos = useContext(TodosContext);
   if (todos) {
     return (
       <Paper>
